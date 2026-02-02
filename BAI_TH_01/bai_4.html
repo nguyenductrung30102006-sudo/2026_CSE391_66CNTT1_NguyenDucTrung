@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bài 4 - Employee Form</title>
+    <link rel="stylesheet" href="">
+  </head>
+  <body>
+    <h3>Basic Info</h3>
+    <hr />
+    <br />
+
+    <form>
+      Employee ID:
+      <input type="text" value="9" /><br /><br />
+
+      Last Name:
+      <input type="text" value="Dodsworth" /><br /><br />
+
+      <label>First Name</label>
+      <select>
+        <option>Anne</option></select
+      ><br />
+      <br />
+
+      Gender:
+      <input type="radio" name="gender" /> Male
+      <input type="radio" name="gender" /> Female
+      <input type="radio" name="gender" /> XXX
+      <input type="radio" name="gender" /> ZZZ <br />
+      <br />
+
+      Title:
+      <input type="text" value="Sales Representative" /><br /><br />
+
+      Suffix:
+      <input type="text" value="Ms." /><br /><br />
+
+      BirthDate:
+      <input type="datetime-local" /><br /><br />
+
+      HireDate:
+      <input type="datetime-local" /><br /><br />
+
+      SSN # (if applicable):
+      <input type="text" />
+      <br /><br />
+
+      Reports To:
+      <select>
+        <option>Buchanan</option>
+        <option>Fuller</option></select
+      ><br /><br />
+
+      <h3>Contact Info</h3>
+      <hr />
+      <br />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="name@example.com" />
+      <br /><br />
+
+      <label for="address">Address</label>
+      <input type="text" id="address" value="7 Houndstooth Rd." />
+      <br /><br />
+
+      <label for="city">City</label>
+      <input type="text" id="city" value="London" />
+      <br /><br />
+
+      <label for="region">Region</label>
+      <input type="text" id="region" name="region" />
+      <br /><br />
+
+      <label for="code"> Postal Code</label>
+      <input type="text" id="code" name="code" value="WG2 7LT" />
+      <br /><br />
+
+      <label for="countries">Country</label>
+      <select id="countries" name="countries">
+        <option value="rf">Russian Federation</option>
+        <option value="us">USA</option>
+        <option value="vn">Viet Nam</option>
+      </select>
+      <br /><br />
+
+      <label for="us tel">US Home Phone</label>
+      <input
+        type="tel"
+        id="us_tel"
+        name="us_tel"
+        placeholder="(234)234-2342"
+        pattern="[0-9]{3}-[0-9]{4}"
+      />
+      <br /><br />
+
+      <label for="file">Photo</label>
+      <input type="text" id="file" name="file" value="EmpID9.bmp" />
+      <br /><br />
+
+      <h3>Optional Info</h3>
+      <hr />
+      <br />
+
+      Notes:<br />
+      <textarea rows="4" cols="50">Lorem ipsum dolor sit amet.</textarea
+      ><br /><br />
+
+      Preferred Shift:<br />
+      <input type="checkbox" /> Regular <input type="checkbox" /> Grave Yard<br /><br />
+
+      Active?
+      <input type="checkbox" /><br /><br />
+
+      Are you human?
+      <strong>TIDAWO</strong><br />
+
+      Click to change <br />
+      <input type="text" /><br />
+      <hr />
+
+      <button type="button"><</button>
+      <button type="button">></button>
+      <input type="submit" value="Submit" />
+      <input type="button" value="Cancelled" /> <br>
+      *required
+    </form>
+  </body>
+</html>
