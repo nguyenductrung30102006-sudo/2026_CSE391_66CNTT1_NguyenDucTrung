@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Dang ky</title>
+<link rel="stylesheet" href="bai3_1.css">
+</head>
+
+<body>
+
+<h2>Form Dang Ky</h2>
+
+<form id="registerForm">
+
+<label>Ho va ten</label>
+<input type="text" id="fullname" maxlength="50">
+<div id="nameCount">0/50</div>
+<span class="error" id="nameError"></span>
+
+
+<label>Email</label>
+<input type="text" id="email">
+<span class="error" id="emailError"></span>
+
+
+<label>Mat khau</label>
+
+<div class="passwordBox">
+<input type="password" id="password">
+<span id="togglePass">👁</span>
+</div>
+
+<div class="strengthBar">
+<div id="strength"></div>
+</div>
+
+<div id="strengthText"></div>
+<span class="error" id="passError"></span>
+
+
+<button type="submit">Dang ky</button>
+
+</form>
+
+<script src="bai3_1.js"></script>
+
+</body>
+</html>

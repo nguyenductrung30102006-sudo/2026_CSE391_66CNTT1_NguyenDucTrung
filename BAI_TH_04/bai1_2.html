@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bang diem sinh vien</title>
+    <link rel="stylesheet" href="bai1_2.css">
+</head>
+<body>
+    <h2>Quan li diem sinh vien</h2>
+    <div class="input-area">
+        <input type="text" id = "name" placeholder = "Ho ten">
+        <input type="number" id="score" placeholder = "Diem (0-10)">
+        <button id="addBtn">Them</button>
+    </div>
+ 
+    <div class="filter-area">
+        <input type="text" id="search" placeholder = "Tim kiem ten...">
+        <select id="rankFilter">
+            <option value="all">Tat ca</option>
+            <option value="Gioi">Gioi</option>
+            <option value="Kha">Kha</option>
+            <option value="Trung binh">Trung binh</option>
+            <option value="Yeu">Yeu</option>    
+        </select>
+    </div>
+     
+    <table>
+         <thead>
+            <tr>
+                <th>STT</th>
+                <th>Ho ten</th>
+                <th id = "sortScore">Diem</th>
+                <th>Xep loai</th>
+                <th>Thao tac</th>
+            </tr>
+         </thead>
+         <tbody id="tableBody"></tbody>
+    </table>
+    <div id = "stats">
+        Tong SV: 0 | Diem trung binh: 0
+    </div>
+    <script src = "bai1_2.js"></script>
+</body> 
+</html>

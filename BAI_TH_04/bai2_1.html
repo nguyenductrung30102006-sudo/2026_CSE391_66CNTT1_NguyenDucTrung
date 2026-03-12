@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Dang ky</title>
+<link rel="stylesheet" href="bai2_1.css">
+</head>
+
+<body>
+
+<h2>Form Dang Ky</h2>
+
+<form id="registerForm">
+
+<label>Ho va ten</label>
+<input type="text" id="fullname">
+<span class="error" id="fullnameError"></span>
+
+<label>Email</label>
+<input type="text" id="email">
+<span class="error" id="emailError"></span>
+
+<label>So dien thoai</label>
+<input type="text" id="phone">
+<span class="error" id="phoneError"></span>
+
+<label>Mat khau</label>
+<input type="password" id="password">
+<span class="error" id="passwordError"></span>
+
+<label>Xac nhan mat khau</label>
+<input type="password" id="confirm">
+<span class="error" id="confirmError"></span>
+
+<label>Gioi tinh</label>
+<input type="radio" name="gender" value="Nam"> Nam
+<input type="radio" name="gender" value="Nu"> Nu
+<span class="error" id="genderError"></span>
+
+<br><br>
+
+<input type="checkbox" id="terms"> Dong y dieu khoan
+<span class="error" id="termsError"></span>
+
+<br><br>
+
+<button type="submit">Dang ky</button>
+
+</form>
+
+<div id="success"></div>
+
+<script src="bai2_1.js"></script>
+
+</body>
+</html>

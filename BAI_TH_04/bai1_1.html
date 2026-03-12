@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bang diem sinh vien</title>
+    <link rel="stylesheet" href="bai1_1.css">
+</head>
+<body>
+    <h2>Quan li diem sinh vien</h2>
+    <label>Ho ten:</label>
+    <input type="text" id = "name">
+    <label>Diem:</label>
+    <input type="number" id = "score" min="0" max="10">
+    <button id="addBtn">Them</button>
+     
+    <table>
+         <thead>
+            <tr>
+                <th>STT</th>
+                <th>Ho ten</th>
+                <th>Diem</th>
+                <th>Xep loai</th>
+                <th>Thao tac</th>
+            </tr>
+         </thead>
+         <tbody id="tableBody"></tbody>
+    </table>
+    <div id = "stats">
+        Tong SV: 0 | Diem trung binh: 0
+    </div>
+    <script src = "bai1_1.js"></script>
+</body> 
+</html>

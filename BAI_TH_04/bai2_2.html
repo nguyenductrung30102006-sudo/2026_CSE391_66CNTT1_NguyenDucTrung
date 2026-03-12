@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Form Dat Hang</title>
+<link rel="stylesheet" href="bai2_2.css">
+</head>
+
+<body>
+
+<h2>Form Dat Hang</h2>
+
+<form id="orderForm">
+
+<label>Ten san pham</label>
+<select id="product">
+<option value="">-- Chon san pham --</option>
+<option value="Ao">Ao</option>
+<option value="Quan">Quan</option>
+<option value="Giay">Giay</option>
+</select>
+<span class="error" id="productError"></span>
+
+
+<label>So luong</label>
+<input type="number" id="quantity">
+<span class="error" id="quantityError"></span>
+
+
+<label>Ngay giao hang</label>
+<input type="date" id="date">
+<span class="error" id="dateError"></span>
+
+
+<label>Dia chi giao</label>
+<input type="text" id="address">
+<span class="error" id="addressError"></span>
+
+
+<label>Ghi chu</label>
+<textarea id="note"></textarea>
+<div id="charCount">0/200</div>
+<span class="error" id="noteError"></span>
+
+
+<label>Thanh toan</label>
+
+<label><input type="radio" name="pay" value="COD"> COD</label>
+<label><input type="radio" name="pay" value="Bank"> Chuyen khoan</label>
+<label><input type="radio" name="pay" value="Ewallet"> Vi dien tu</label>
+
+<span class="error" id="payError"></span>
+
+
+<h3>Tong tien: <span id="total">0</span> VND</h3>
+
+<button type="submit">Dat hang</button>
+
+</form>
+
+<div id="confirmBox" class="confirm">
+<p id="summary"></p>
+<button id="confirmBtn">Xac nhan</button>
+<button id="cancelBtn">Huy</button>
+</div>
+
+<div id="success"></div>
+
+<script src="bai2_2.js"></script>
+
+</body>
+</html>
